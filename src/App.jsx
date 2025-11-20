@@ -25,7 +25,8 @@ export default function App() {
   // --- UPLOAD FILE TO SUPABASE STORAGE ---
   const uploadFile = async (file, folder) => {
     try {
-      const filePath = `${folder}/${Date.now()}-${file.name}`;
+      // FIX: Added backticks (`) to correctly use template literals.
+      const filePath = `${folder}/${Date.now()}-${file.name}`; 
 
 
       // Upload the file to Supabase Storage
@@ -176,8 +177,8 @@ export default function App() {
 
   // --- UI ---
   return (
-    <div className="App-Container">
-      <h2>Task Image & Video </h2>
+    <div className="App-Container" style={{maxWidth: '600px', margin: '0 auto', padding: '1rem '}}>
+      <h2 className="text-3xl font-bold underline" style={{color: 'green'}}>Cristine's Task Manager</h2>
 
 
       <form onSubmit={createTask}>
@@ -228,7 +229,7 @@ export default function App() {
               )}
 
 
-              {task.video_url && (         
+              {task.video_url && (         
                 <video
                   src={task.video_url}
                   controls
@@ -254,6 +255,3 @@ export default function App() {
     </div>
   );
 }
-
-
-

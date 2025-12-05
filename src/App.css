@@ -1,0 +1,117 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+}
+
+/* Container */
+.App-Container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.App-Container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #000000;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #000000;
+  background: #ffffff;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* File Inputs */
+input[type="file"] {
+  border: none;
+  background: #f8f8f8;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+/* Buttons */
+button {
+  background: #000000;
+  color: #ffffff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #333333;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: scale(1.01);
+}
+
+/* Task Content */
+li h1 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+}
+
+li p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Image & Video Styling */
+img, video {
+  display: block;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* Update/Delete Buttons */
+li button {
+  margin-right: 10px;
+  margin-top: 8px;
+}
